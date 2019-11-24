@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <style>
+            .image {
+                width: 256px;
+                height: 256px;
+                background: url(./default.png);
+                background: image-set(
+                    url(./128.png) 1x,
+                    url(./256.png) 2x,
+                    url(./512.png) 3x
+                );
+                background: -webkit-image-set(
+                    url(./128.png) 1x,
+                    url(./256.png) 2x,
+                    url(./512.png) 3x
+                );
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image"></div>
+    </body>
+</html>
