@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --center_color: rgb(59, 41, 117);
+            --border_color: rgb(57, 23, 31);
+        }
+        body {
+            margin: 0;
+        }
+        .image {
+            color: red;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle at 80px 80px, var(--center_color) 26px, transparent, 27px, transparent 100%),
+            radial-gradient(at 80px 80px, transparent 70px, var(--border_color) 71px, transparent 73px, transparent 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image"></div>
+</body>
+
+</html>
