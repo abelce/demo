@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        html {
+            overflow: hidden;
+        }
+        .left {
+            float: left;
+            height: 400px;
+            width: 400px;
+            shape-outside: url(./4ce0ec0e-1443-43a6-ba27-ec1d1c59f01a.png);
+            background-color: #cd0000;
+            -webkit-mask: url(./4ce0ec0e-1443-43a6-ba27-ec1d1c59f01a.png) no-repeat;
+            mask: url(./4ce0ec0e-1443-43a6-ba27-ec1d1c59f01a.png) no-repeat;
+        }
+        .content {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body id="body" style="height: 100vh;">
+    <div style="height: 100vh;overflow: auto;" id="box">
+        <div class="left"></div>
+        <!-- <div class="right"></div> -->
+        <div class="content" id="content">
+            <!-- <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p> -->
+        </div>
+    </div>
+    <script>
+        var content = document.getElementById('content');
+        for (var i=1;i<100;i++) {
+            var  p =document.createElement('p')
+            p.innerHTML = i;
+            content.appendChild(p);
+        }
+        var box = document.getElementById('box');
+        var shape = document.querySelector('.left');
+        console.log(box)
+        box.addEventListener('scroll', function () {
+        var scrollTop = box.scrollTop;
+        console.log(scrollTop);
+        // 滚动偏移应用在margin-top上
+        shape.style.marginTop = (150 + scrollTop) + 'px';
+        });
+    </script>
+</body>
+
+</html>
