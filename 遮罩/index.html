@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .masked {
+            width: 227px;
+            height: 200px;
+            background: blue linear-gradient(red, blue);
+            -webkit-mask-image: url(https://mdn.mozillademos.org/files/12668/MDN.svg);
+            mask-image: url(https://mdn.mozillademos.org/files/12668/MDN.svg);
+            -webkit-mask-mode: match-source;
+            mask-mode: match-source;
+            /* Can be changed in the live sample */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="masked"></div>
+</body>
+
+</html>
